@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <script>
+        function CtoF()
+{
+  var Valc=document.getElementById('d2').value;
+  var Valf=((9/5)*Valc)+32;
+  document.getElementById('d3').value=Valf;
+}
+function FtoC()
+{
+  var Valf=document.getElementById('d3').value;
+  var Valc=((Valf-32)*5)/9;
+  document.getElementById('d2').value=Valc;
+}
+    </script>
+</head>
+<body>
+   <h1><span>General Converter</span></h1>
+    <div id="d1">
+            <input placeholder="Celcius"  type="number" name="d2" id="d2" class="c1" onkeyup="CtoF()" />
+            <div id="d4"><span id="id1">=</span></div>
+            <input placeholder="Fahrenheit" type="number" id="d3" namr="d3" class="c1" onkeyup="FtoC()" />
+        </div>
+</body>
+</html>
